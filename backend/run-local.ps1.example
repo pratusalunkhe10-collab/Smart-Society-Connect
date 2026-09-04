@@ -1,0 +1,26 @@
+# Copy this file to run-local.ps1, fill in your local values, then run it
+# from PowerShell with: .\run-local.ps1
+# Do not commit run-local.ps1 because it contains private credentials.
+
+$env:DB_URL = "jdbc:mysql://localhost:3306/smart_society_connect_db"
+$env:DB_USERNAME = "root"
+$env:DB_PASSWORD = "PASTE_YOUR_MYSQL_PASSWORD_HERE"
+
+# This Gmail account sends OTP messages to newly registered users.
+$env:MAIL_USERNAME = "yourgmail@gmail.com"
+$env:MAIL_PASSWORD = "PASTE_YOUR_16_CHARACTER_GMAIL_APP_PASSWORD_HERE"
+
+# Use a long, private random value (32+ characters) for JWT signing.
+$env:APP_JWT_SECRET = "PASTE_A_LONG_PRIVATE_JWT_SECRET_HERE"
+
+# Keep these local origins while developing the React frontend with Vite.
+$env:APP_CORS_ALLOWED_ORIGINS = "http://localhost:5173,http://localhost:3000"
+
+# Create Test Mode keys in Razorpay Dashboard -> Account & Settings -> API Keys.
+$env:RAZORPAY_KEY_ID = "rzp_test_REPLACE_ME"
+$env:RAZORPAY_KEY_SECRET = "PASTE_YOUR_RAZORPAY_TEST_SECRET_HERE"
+# Configure the same value on the Razorpay webhook and subscribe to
+# payment.captured and payment.failed.
+$env:RAZORPAY_WEBHOOK_SECRET = "PASTE_A_PRIVATE_WEBHOOK_SECRET_HERE"
+
+Write-Host "Backend environment variables are configured for this PowerShell session."

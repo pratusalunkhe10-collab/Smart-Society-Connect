@@ -1,0 +1,72 @@
+# ============================================================
+# Smart Society Connect - Root Git Ignore
+# ============================================================
+
+# ---------- Environment / Secrets ----------
+.env
+.env.*
+!.env.example
+
+application-local.properties
+application-prod.properties
+
+# ---------- Java / Maven ----------
+target/
+bin/
+*.class
+*.jar
+*.war
+*.log
+
+# Maven
+.mvn/timing.properties
+
+# ---------- Node / React ----------
+node_modules/
+dist/
+.vite/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# ---------- Uploaded Files ----------
+uploads/
+**/uploads/
+src/main/resources/uploads/
+
+# ---------- IDE ----------
+.idea/
+*.iml
+
+# Eclipse
+.metadata/
+.settings/
+.classpath
+.project
+.factorypath
+
+# VS Code
+.vscode/
+
+# ---------- Operating System ----------
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ---------- Temporary ----------
+*.tmp
+*.temp
+*.bak
+*.swp
+
+# ---------- Runtime ----------
+logs/
+*.pid
+
+# ---------- Credentials / Keys ----------
+*.pem
+*.key
+*.p12
+*.pfx
+secrets/
+credentials/
