@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # ============================================================
 # Smart Society Connect - Root Git Ignore
 # ============================================================
@@ -70,3 +71,39 @@ logs/
 *.pfx
 secrets/
 credentials/
+=======
+HELP.md
+target/
+run-local.ps1
+.mvn/wrapper/maven-wrapper.jar
+!**/src/main/**/target/
+!**/src/test/**/target/
+
+### STS ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+
+### IntelliJ IDEA ###
+.idea
+*.iws
+*.iml
+*.ipr
+
+### NetBeans ###
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+build/
+!**/src/main/**/build/
+!**/src/test/**/build/
+
+### VS Code ###
+.vscode/
+>>>>>>> ff4426f4595e112014e62ec103107df82d28bfb3
